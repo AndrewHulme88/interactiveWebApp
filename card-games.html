@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Fun Web App</h1>
+        <a href="index.html" class="home-button">Home</a>
+    </nav>
+    <h1>Card Games</h1>
+    <div class="games">
+        <button class="game-button" id="blackjack">Blackjack</button>
+        <button class="game-button" id="coming-soon-1">Coming Soon</button>
+        <button class="game-button" id="coming-soon-2">Coming Soon</button>
+    </div>
+    <div class="blackjack-game">
+        <h2>Blackjack</h2>
+        <p id="player-hand"></p>
+        <p id="dealer-hand"></p>
+        <button id="hit-button">Hit</button>
+        <button id="stand-button">Stand</button>
+        <button id="reset-button">Reset</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="shapes">
+        <div class="diamond" id="rotating-diamond"></div>
+        <div class="club" id="bouncing-club"></div>
+    </div>
+
+    <script src="card-games.js"></script>
+</body>
+</html>
