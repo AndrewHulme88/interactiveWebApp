@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+}
+
+.shapes {
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* animations */
+.spin {
+  animation: spin 2s linear;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.bounce {
+  animation: bounce 2s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
